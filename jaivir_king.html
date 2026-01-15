@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <h2>jaivir_king</h2>
+    <p>Simple website built using only HTML & CSS</p>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      This is a basic website template. You can use it for learning,
+      practice, or as a starting point for bigger projects.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Clean and modern website designs.</p>
+      </div>
+      <div class="card">
+        <h3>HTML & CSS</h3>
+        <p>Fast and responsive layouts.</p>
+      </div>
+      <div class="card">
+        <h3>Learning Projects</h3>
+        <p>Perfect for beginners and students.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: example@email.com</p>
+    <p>Phone: +91 00000 00000</p>
+  </section>
+
+  <footer>
+    <p>© 2026 My Website | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
